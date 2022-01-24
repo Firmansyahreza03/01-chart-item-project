@@ -1,24 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState } from "react";
+import Card from "./components/UI/card";
+import ExpenseList from "./components/Expenses/ExpenseList";
+import NewExpense from "./components/NewExpense/NewExpense";
+
+const dummyExpenses = [
+  {
+    id: "e1",
+    title: "Oxygen Sensor",
+    amount: 900.0,
+    date: new Date(2022, 0, 15),
+  },
+  {
+    id: "e2",
+    title: "Oxycan",
+    amount: 80,
+    date: new Date(2022, 0, 15),
+  },
+  {
+    id: "e3",
+    title: "Solenoid Pipe",
+    amount: 100,
+    date: new Date(2022, 0, 15),
+  },
+  {
+    id: "e4",
+    title: "Pipe",
+    amount: 50,
+    date: new Date(2022, 0, 30),
+  },
+];
 
 function App() {
+  const [expenses, setExpenses] = useState(dummyExpenses);
+
+  function addExpenseHandler(expense) {
+    setExpenses((prevExpenses) => {
+      return [expense, ...prevExpenses];
+    });
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Card className="App-header">
+      <h2 className="App-title">Muhammad Reza Firmansyah</h2>
+      <NewExpense onAddExpense={addExpenseHandler}></NewExpense>
+      <ExpenseList item={expenses}></ExpenseList>
+    </Card>
   );
 }
 
