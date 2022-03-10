@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/01-chart-item-project/static/css/main.302790b2.css",
-    "main.js": "/01-chart-item-project/static/js/main.0e318c1b.js",
-    "static/js/787.cfd8f164.chunk.js": "/01-chart-item-project/static/js/787.cfd8f164.chunk.js",
-    "index.html": "/01-chart-item-project/index.html",
-    "main.302790b2.css.map": "/01-chart-item-project/static/css/main.302790b2.css.map",
-    "main.0e318c1b.js.map": "/01-chart-item-project/static/js/main.0e318c1b.js.map",
-    "787.cfd8f164.chunk.js.map": "/01-chart-item-project/static/js/787.cfd8f164.chunk.js.map"
+    "main.css": "/chart-item/static/css/main.302790b2.css",
+    "main.js": "/chart-item/static/js/main.9ab1e0ef.js",
+    "static/js/787.cfd8f164.chunk.js": "/chart-item/static/js/787.cfd8f164.chunk.js",
+    "index.html": "/chart-item/index.html",
+    "main.302790b2.css.map": "/chart-item/static/css/main.302790b2.css.map",
+    "main.9ab1e0ef.js.map": "/chart-item/static/js/main.9ab1e0ef.js.map",
+    "787.cfd8f164.chunk.js.map": "/chart-item/static/js/787.cfd8f164.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.302790b2.css",
-    "static/js/main.0e318c1b.js"
+    "static/js/main.9ab1e0ef.js"
   ]
 }
