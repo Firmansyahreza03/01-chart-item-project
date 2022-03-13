@@ -1,6 +1,6 @@
 # PREVIEW
 
-http://Firmansyahreza03.github.io/01-chart-item-project
+http://Firmansyahreza03.github.io/chart-item
 
 # Getting Started with Create React App
 
